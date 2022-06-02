@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Free Code Camp - Quote Machine Project
+A very minimalist (but functional) quote machine from the Free Code Camp [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries) section. This is the first of five projects for the certification. This repo is that project created with Create React App, and the contents below are from the README that is generated when launching the project with `npx create-react-app [app-name]`.
+
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
