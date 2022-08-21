@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import { SiTwitter } from 'react-icons/si'
-import axios from "https://cdn.skypack.dev/axios@0.27.2";
+const axios = require('axios').default;
 
 class App extends React.Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class App extends React.Component {
         <h1>Dan's Random Quote Machine</h1>
         <div id="quote-box">
           <div id="buttons">
-            <a href={`https://twitter.com/intent/tweet?text= "${this.state.quote}" - ${this.state.author}`} target="_blank" title="Post this quote on twitter!" id='tweet-quote'>
+            <a href={`https://twitter.com/intent/tweet?text= "${this.state.quote}" - ${this.state.author}`} target="_blank" rel="noreferrer" title="Post this quote on twitter!" id='tweet-quote'>
             <SiTwitter class="icon"/>
          </a>
             <button id="new-quote" onClick={this.refreshQuote}> New Quote!</button>           
@@ -52,9 +52,6 @@ class App extends React.Component {
 }
 
 class QuoteCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div> 
